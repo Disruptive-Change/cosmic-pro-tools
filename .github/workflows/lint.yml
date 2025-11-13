@@ -1,0 +1,25 @@
+name: Lint Shell Scripts
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  shellcheck:
+    name: ShellCheck Lint
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install ShellCheck
+      uses: ludeeus/action-shellcheck@v2
+
+    - name: Run ShellCheck
+      run: |
+        echo "🔍 Running ShellCheck..."
+        shellcheck cosmic-master-toolkit-pro.sh setup.sh || exit 1
+        echo "✔ ShellCheck passed successfully!"

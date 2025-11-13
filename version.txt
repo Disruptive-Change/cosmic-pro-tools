@@ -1,0 +1,17 @@
+Cosmic Master Toolkit — Pro Edition
+Version: 1.0.0
+Release Date: 2025-11-13
+Maintainers: Don & Nova
+
+Changelog:
+- Initial Pro release
+- Added macOS-quality font rendering engine
+- Added Noto + Nerd Font auto-installer
+- Added Emoji font pack support
+- Added COSMIC theme + icon auto-installer (Catppuccin, Orchis, Tela)
+- Added performance tuning presets for NVIDIA + Wayland
+- Added interactive TUI launcher
+- Added auto-update system for toolkit files, README, workflows
+- Cross-distro support (Fedora, Arch/CachyOS, PikaOS, Nobara, Ubuntu, Pop!_OS)
+- Added GitHub Actions workflow (lint + auto-generate preview)
+- Toolkit now includes Pro Branding Pack (banner + icons)
